@@ -5,12 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Tracker</title>
+    <!-- font -->
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
     <!-- Tailwind css -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="bg-[#F8FAFC]">
+    <nav class="container mx-auto">
+        <h1 class="text-[#002C5C] font-[geist] pt-10 pb-2.5  text-3xl font-bold">Job Application Tracker
+        </h1>
+        <!-- Counts -->
+        <div class="grid grid-cols-3 gap-4 pb-6">
+            <div class="bg-white rounded-lg p-5">
+                <p class="text-[#323B49] text-sm">Total</p>
+                <p id="" class="font-bold text-2xl text-[#002C5C]">0</p>
+            </div>
+            <div class="bg-white rounded-lg p-5">
+                <p class="text-[#323B49] text-sm">Interview</p>
+                <p id="" class="font-bold text-2xl text-[#10B981]">0</p>
+            </div>
+            <div class="bg-white rounded-lg p-5">
+                <p class="text-[#323B49] text-sm">Total</p>
+                <p id="" class="font-bold text-2xl text-[#EF4444]">0</p>
+            </div>
+        </div>
 
+        <hr class="text-[#E6E7E9]">
+    </nav>
+
+    <!-- add js -->
+    <script src="script.js"></script>
 </body>
 
 </html>

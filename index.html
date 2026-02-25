@@ -8,6 +8,8 @@
     <!-- font -->
     <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Tailwind css -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -40,7 +42,7 @@
         <!-- available jobs -->
         <div class="flex justify-between items-center">
             <p class="font-semibold text-xl text-[#002C5C]">Available Jobs</p>
-            <p class="text-[#64748B]"><span id="available-jobs" class="mr-1">0</span>Jobs</p>
+            <p class="text-[#64748B]"><span id="available-jobs" class="mr-1">0</span></p>
         </div>
         <div class="pt-6 pb-4">
             <button id="all-btn" onclick="toggleStyle('all-btn')"
@@ -50,30 +52,153 @@
             <button id="rejected-btn" onclick="toggleStyle('rejected-btn')"
                 class="px-8 py-2 rounded-sm text-[#64748B] text-xs font-semibold bg-white">Rejected</button>
         </div>
-        <!-- filtered section -->
-        <section id="filtered-section" class="hidden">
-
-        </section>
+        <section id="interview-section" class="hidden"></section>
+        <section id="rejected-section" class="hidden"></section>
 
         <!-- card items -->
         <section id="card">
             <!-- card item-1 -->
             <div class="bg-white rounded-sm p-6 mb-4 relative">
-                <h2 class="job-description font-semibold text-lg text-[#002C5C]">Mobile First Corp</h2>
-                <p class="job-title text-[#64748B] mt-1">React native developer</p>
-                <p class="job-queries text-[#64748B] my-5 text-sm">Remote • Full-time • $130,000 - $175,000</p>
+                <h2 class="job-description font-semibold text-lg text-[#002C5C]">TechFlow Solutions</h2>
+                <p class="job-title text-[#64748B] mt-1">Senior MERN Stack Developer</p>
+                <p class="job-queries text-[#64748B] my-5 text-sm">Remote • Full-time • $90,000 - $120,000</p>
                 <button class="job-apply text-[#002C5C] my-2 text-sm bg-[#EEF4FF] px-3 py-2 font-semibold">NOT
                     APPLIED</button>
-                <P class="job-details text-[#323B49] mb-5">Build cross-platform mobile applications using React
-                    Native. Work on
-                    products used by millions of
-                    users worldwide.</P>
+                <P class="job-details text-[#323B49] mb-5">Lead our engineering team to build scalable web applications.
+                    Strong expertise in MongoDB, Express, React, and Node.js is required for architectural decisions.
+                </P>
                 <button
                     class="int-btn text-[#10B981] font-semibold uppercase py-2 px-3 border rounded-sm border-[#10B981] mr-2">Interview</button>
                 <button
                     class="reject-btn  text-[#EF4444] font-semibold uppercase py-2 px-3 border rounded-sm border-[#EF4444]">Rejected</button>
-                <div>
-                    <img class="cursor-pointer border-[#F1F2F4] border-2 rounded-full p-2 absolute top-6 right-0"
+                <div class="">
+                    <img class="delete-btn cursor-pointer border-[#F1F2F4] border-2 rounded-full p-2 absolute top-6 right-0"
+                        src="img/delete.png" alt="">
+                </div>
+            </div>
+            <!-- card item-2 -->
+            <div class="bg-white rounded-sm p-6 mb-4 relative">
+                <h2 class="job-description font-semibold text-lg text-[#002C5C]">Cloud Nine Systems</h2>
+                <p class="job-title text-[#64748B] mt-1">Junior Full Stack Developer</p>
+                <p class="job-queries text-[#64748B] my-5 text-sm">Dhaka, BD • On-site • $600 - $900</p>
+                <button class="job-apply text-[#002C5C] my-2 text-sm bg-[#EEF4FF] px-3 py-2 font-semibold">NOT
+                    APPLIED</button>
+                <P class="job-details text-[#323B49] mb-5">Excellent opportunity for juniors to work on real-world MERN
+                    projects. Focus on building reusable React components and RESTful API integration.</P>
+                <button
+                    class="int-btn text-[#10B981] font-semibold uppercase py-2 px-3 border rounded-sm border-[#10B981] mr-2">Interview</button>
+                <button
+                    class="reject-btn  text-[#EF4444] font-semibold uppercase py-2 px-3 border rounded-sm border-[#EF4444]">Rejected</button>
+                <div class="">
+                    <img class="delete-btn cursor-pointer border-[#F1F2F4] border-2 rounded-full p-2 absolute top-6 right-0"
+                        src="img/delete.png" alt="">
+                </div>
+            </div>
+            <!-- card item-3 -->
+            <div class="bg-white rounded-sm p-6 mb-4 relative">
+                <h2 class="job-description font-semibold text-lg text-[#002C5C]">Creative Digital Agency</h2>
+                <p class="job-title text-[#64748B] mt-1">Frontend Developer (React Specialist)</p>
+                <p class="job-queries text-[#64748B] my-5 text-sm">Hybrid • Contract • $4,000 - $6,000</p>
+                <button class="job-apply text-[#002C5C] my-2 text-sm bg-[#EEF4FF] px-3 py-2 font-semibold">NOT
+                    APPLIED</button>
+                <P class="job-details text-[#323B49] mb-5">Build high-performance user interfaces for our global
+                    clients. Must have deep knowledge of React Hooks, Context API, and Tailwind CSS.</P>
+                <button
+                    class="int-btn text-[#10B981] font-semibold uppercase py-2 px-3 border rounded-sm border-[#10B981] mr-2">Interview</button>
+                <button
+                    class="reject-btn  text-[#EF4444] font-semibold uppercase py-2 px-3 border rounded-sm border-[#EF4444]">Rejected</button>
+                <div class="">
+                    <img class="delete-btn cursor-pointer border-[#F1F2F4] border-2 rounded-full p-2 absolute top-6 right-0"
+                        src="img/delete.png" alt="">
+                </div>
+            </div>
+            <!-- card item-4 -->
+            <div class="bg-white rounded-sm p-6 mb-4 relative">
+                <h2 class="job-description font-semibold text-lg text-[#002C5C]">SecureData Inc.</h2>
+                <p class="job-title text-[#64748B] mt-1">Backend Engineer (Node/Express)</p>
+                <p class="job-queries text-[#64748B] my-5 text-sm">Remote • Full-time • $80,000 - $110,000</p>
+                <button class="job-apply text-[#002C5C] my-2 text-sm bg-[#EEF4FF] px-3 py-2 font-semibold">NOT
+                    APPLIED</button>
+                <P class="job-details text-[#323B49] mb-5">Focus on server-side logic, complex database management with
+                    MongoDB, and ensuring high performance and security of application APIs.</P>
+                <button
+                    class="int-btn text-[#10B981] font-semibold uppercase py-2 px-3 border rounded-sm border-[#10B981] mr-2">Interview</button>
+                <button
+                    class="reject-btn  text-[#EF4444] font-semibold uppercase py-2 px-3 border rounded-sm border-[#EF4444]">Rejected</button>
+                <div class="">
+                    <img class="delete-btn cursor-pointer border-[#F1F2F4] border-2 rounded-full p-2 absolute top-6 right-0"
+                        src="img/delete.png" alt="">
+                </div>
+            </div>
+            <!-- card item-5 -->
+            <div class="bg-white rounded-sm p-6 mb-4 relative">
+                <h2 class="job-description font-semibold text-lg text-[#002C5C]">EduTech Academy</h2>
+                <p class="job-title text-[#64748B] mt-1">MERN Stack Instructor</p>
+                <p class="job-queries text-[#64748B] my-5 text-sm">Online • Part-time • $30 - $50 (per hour)</p>
+                <button class="job-apply text-[#002C5C] my-2 text-sm bg-[#EEF4FF] px-3 py-2 font-semibold">NOT
+                    APPLIED</button>
+                <P class="job-details text-[#323B49] mb-5">Teach aspiring developers the fundamentals of the MERN stack.
+                    Must be able to explain complex concepts like Redux and Middleware in simple terms.</P>
+                <button
+                    class="int-btn text-[#10B981] font-semibold uppercase py-2 px-3 border rounded-sm border-[#10B981] mr-2">Interview</button>
+                <button
+                    class="reject-btn  text-[#EF4444] font-semibold uppercase py-2 px-3 border rounded-sm border-[#EF4444]">Rejected</button>
+                <div class="">
+                    <img class="delete-btn cursor-pointer border-[#F1F2F4] border-2 rounded-full p-2 absolute top-6 right-0"
+                        src="img/delete.png" alt="">
+                </div>
+            </div>
+            <!-- card item-6 -->
+            <div class="bg-white rounded-sm p-6 mb-4 relative">
+                <h2 class="job-description font-semibold text-lg text-[#002C5C]">NextGen Startups</h2>
+                <p class="job-title text-[#64748B] mt-1">SaaS Product Developer</p>
+                <p class="job-queries text-[#64748B] my-5 text-sm">Remote • Full-time • $70,000 - $95,000</p>
+                <button class="job-apply text-[#002C5C] my-2 text-sm bg-[#EEF4FF] px-3 py-2 font-semibold">NOT
+                    APPLIED</button>
+                <P class="job-details text-[#323B49] mb-5">Help us build and maintain our SaaS platform using the MERN
+                    stack. Experience with Redux Toolkit, JWT authentication, and Stripe integration is a plus.</P>
+                <button
+                    class="int-btn text-[#10B981] font-semibold uppercase py-2 px-3 border rounded-sm border-[#10B981] mr-2">Interview</button>
+                <button
+                    class="reject-btn  text-[#EF4444] font-semibold uppercase py-2 px-3 border rounded-sm border-[#EF4444]">Rejected</button>
+                <div class="">
+                    <img class="delete-btn cursor-pointer border-[#F1F2F4] border-2 rounded-full p-2 absolute top-6 right-0"
+                        src="img/delete.png" alt="">
+                </div>
+            </div>
+            <!-- card item-7 -->
+            <div class="bg-white rounded-sm p-6 mb-4 relative">
+                <h2 class="job-description font-semibold text-lg text-[#002C5C]">ShopSmart BD</h2>
+                <p class="job-title text-[#64748B] mt-1">E-commerce Specialist</p>
+                <p class="job-queries text-[#64748B] my-5 text-sm">Chittagong • On-site • $800 - $1,200</p>
+                <button class="job-apply text-[#002C5C] my-2 text-sm bg-[#EEF4FF] px-3 py-2 font-semibold">NOT
+                    APPLIED</button>
+                <P class="job-details text-[#323B49] mb-5">Develop and optimize our local e-commerce platform. Focus on
+                    payment gateway integration, real-time inventory tracking, and SEO optimization.</P>
+                <button
+                    class="int-btn text-[#10B981] font-semibold uppercase py-2 px-3 border rounded-sm border-[#10B981] mr-2">Interview</button>
+                <button
+                    class="reject-btn  text-[#EF4444] font-semibold uppercase py-2 px-3 border rounded-sm border-[#EF4444]">Rejected</button>
+                <div class="">
+                    <img class="delete-btn cursor-pointer border-[#F1F2F4] border-2 rounded-full p-2 absolute top-6 right-0"
+                        src="img/delete.png" alt="">
+                </div>
+            </div>
+            <!-- card item-8 -->
+            <div class="bg-white rounded-sm p-6 mb-4 relative">
+                <h2 class="job-description font-semibold text-lg text-[#002C5C]">CyberGuard Ltd.</h2>
+                <p class="job-title text-[#64748B] mt-1">Web Security Researcher</p>
+                <p class="job-queries text-[#64748B] my-5 text-sm">Remote • Full-time • $100,000 - $140,000</p>
+                <button class="job-apply text-[#002C5C] my-2 text-sm bg-[#EEF4FF] px-3 py-2 font-semibold">NOT
+                    APPLIED</button>
+                <P class="job-details text-[#323B49] mb-5">Audit MERN stack applications for vulnerabilities. Identify
+                    and fix security loopholes in Express middleware, MongoDB schemas, and frontend sanitization.</P>
+                <button
+                    class="int-btn text-[#10B981] font-semibold uppercase py-2 px-3 border rounded-sm border-[#10B981] mr-2">Interview</button>
+                <button
+                    class="reject-btn  text-[#EF4444] font-semibold uppercase py-2 px-3 border rounded-sm border-[#EF4444]">Rejected</button>
+                <div class="">
+                    <img class="delete-btn cursor-pointer border-[#F1F2F4] border-2 rounded-full p-2 absolute top-6 right-0"
                         src="img/delete.png" alt="">
                 </div>
             </div>

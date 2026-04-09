@@ -1,18 +1,23 @@
-1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
-Answer : 
-getElementById: selects unique id.
-getElementsByClassName: selects all elements of the same className.
-querySelector: Uses CSS selectors to returns first matching elements.
-querySelectorAll: selects to return all matching elements in a NodeList.
+# 💼 Job Tracker
 
-2. How do you create and insert a new element into the DOM?
-Answer : Use document.createElement('tagName') to create the node tree .Use element.textContent or element.innerHTML to add the content. Use parentElement.appendChild(newElement)  to insert it into the DOM.
+A simple and powerful job tracking application to manage your job applications, interviews, and career progress in one place.
 
-3. What is Event Bubbling? And how does it work?
-Answer : Event Bubble is the process to action to the child element. then bubble ups to the parent, then grantparent then go until the root element.
+## 🚀 Features
 
-4. What is Event Delegation in JavaScript? Why is it useful?
-Answer : Event delegation use a single parent listener to manage multiple child event from bubbling, saving memory and handling dynamic elements.
+- 📝 Add, edit, and delete job applications
+- 📊 Track application status (Applied, Interview, Offer, Rejected)
+- 🏢 Store company and job details
+- 📅 Track interview dates and notes
+- 🔍 Search and filter job records
+- 📌 Clean and user-friendly interface
 
-5. What is the difference between preventDefault() and stopPropagation() methods?
-Answer : preventDefault Stop the browser's default action like page refresh on the other hand stopPropagation Stops the event from bubbling up to parent elements.
+## 📸 Demo
+
+_Add screenshots or demo link here_
+
+## 🛠️ Tech Stack
+
+- Frontend: HTML, CSS, JavaScript / React (update if needed)
+- Backend: Node.js / Express (update if needed)
+- Database: MongoDB / MySQL (update if needed)
+

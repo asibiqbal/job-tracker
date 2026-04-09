@@ -11,13 +11,11 @@ A simple and powerful job tracking application to manage your job applications, 
 - 🔍 Search and filter job records
 - 📌 Clean and user-friendly interface
 
-## 📸 Demo
-
-_Add screenshots or demo link here_
+## 🌐 Live & Links
+- 🔗 Live Site: https://asibiqbal.github.io/job-tracker/  
+- 🔗 GitHub Repo: https://github.com/asibiqbal/job-tracker
 
 ## 🛠️ Tech Stack
 
-- Frontend: HTML, CSS, JavaScript / React (update if needed)
-- Backend: Node.js / Express (update if needed)
-- Database: MongoDB / MySQL (update if needed)
+- Frontend: HTML, CSS, JavaScript 
 
